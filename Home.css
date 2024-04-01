@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header a{
+  color: black;
+  text-decoration: none ;
+  
+}
+
+body{
+  background-image: url(./BG004.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  align-items: center;
+  background: white;
+  height: 80px;
+}
+
+.logo img {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.lmth li {
+  display: inline-block;
+}
+
+.lmth li a {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  padding: 8px 30px;
+  border-radius: 7px;
+  transition: all .3s ease;
+  font-size: 20px;
+}
+
+.foot {
+    text-align: center;
+    background: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.lmth li a:hover,
+.lmth li a.active {
+  color: white;
+  background: lightblue;
+}
+
+#icon {
+  background-color: black;
+  padding: 5px 7px 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#icon svg {
+  color: white;
+  height: 28px;
+  transition: all .3s ease;
+}
+
+#icon:hover {
+  background: white;
+}
+
+#icon:hover svg {
+  color: black;
+}
+
+#checkbox,
+#icon {
+  display: none;
+}
+.list{
+  font-size: 20px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+  nav {
+      border-bottom: 1px solid #455468;
+  }
+
+    .lmth {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 71px);
+      background-color: white;
+      left: 0;
+      top: 0;
+      text-align: center;
+      display: none;
+      margin-top: 71px;
+  }
+
+  .lmth li {
+      display: block;
+      padding: 10px 15px;
+  }
+
+  .lmth li a {
+      display: block;
+      padding: 10px 0;
+  }
+
+  #icon {
+      display: block;
+  }
+
+  #checkbox:checked~ul {
+      display: block;
+  }
+}
+.hero-content {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0.5));
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  border: 3px solid black;
+}
+
+.cta-button:hover {
+  background-color: lightblue;
+  box-shadow: 0 10px 15px 0 lightblue;
+
+} 
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .nav-links.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 10px;
+      background-color: gray;
+  }
+
+  .nav-links.active li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .hero-content {
+      padding: 50px;
+  }
+}
+* {box-sizing: border-box}
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 2px 0;
+  display: inline-block;
+  border: 2px solid black;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+hr {
+  border: 1px solid white;
+  margin-bottom: 25px;
+
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid black;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+  background-color: lightblue;
+  box-shadow: 0 10px 15px 0 lightblue;
+
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: white;
+  color: black;
+
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+
+}
+
+.container {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

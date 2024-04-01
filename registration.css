@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: calc();
+}
+
+body{
+  background-image: url(./BG002.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  align-items: center;
+  background: white;
+}
+.logo img {
+  margin: 0;
+  height: 50px;
+  width: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  padding: 8px 30px;
+  border-radius: 7px;
+  transition: all .3s ease;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #FFF;
+  background: lightblue;
+}
+
+#icon {
+  background-color: black;
+  padding: 5px 7px 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#icon svg {
+  color: #FFF;
+  height: 28px;
+  transition: all .3s ease;
+}
+
+#icon:hover {
+  background: #FFF;
+}
+
+#icon:hover svg {
+  color: black;
+}
+
+#checkbox,
+#icon {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  nav {
+      border-bottom: 1px solid #455468;
+  }
+
+  ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 71px);
+      background-color: white;
+      left: 0;
+      top: 0;
+      text-align: center;
+      display: none;
+      margin-top: 71px;
+  }
+
+  ul li {
+      display: block;
+      padding: 10px 15px;
+  }
+
+  ul li a {
+      display: block;
+      padding: 10px 0;
+  }
+
+  #icon {
+      display: block;
+  }
+
+  #checkbox:checked~ul {
+      display: block;
+  }
+}
+
+header{
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+header a{
+  color: black;
+  text-decoration: underline;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+
+header .topnav{
+  display: inline-flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.list{
+  font-family: serif;
+  text-decoration: none;
+  display: inline;
+  padding: 5px;
+  font-size: 20px;
+  font-family: serif;
+}
+
+.list a:hover{
+  transition: .3s;
+  border-radius: 40px;
+  color: black !important;
+}
+
+.foot{
+  text-align: center;
+  background: white;
+  color: black;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: white;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid white;
+  font-size: 18px;
+}
+
+.cta-button:hover {
+  background-color: lightblue;
+}
+
+h2{
+  color: black;
+}
+
+p{
+  color: white;
+}
+
+.contact-form {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 25px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 15px;
+}
+
+label {
+  padding: 20px 12px 12px 0;
+  display: inline-block;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  border: 2px solid black;
+  cursor: pointer;
+  float: right;
+  margin: 5px;
+}
+
+input[type=submit]:hover {
+  background-color: lightblue;
+}
+
+.container {
+  border-radius: 5px;
+  background: linear-gradient(rgba(0, 0, 0, 0.714), rgba(255, 255, 255, 0.599));
+  border: 2px solid black;
+  padding: 30px;
+  margin: 10% auto;
+  max-width: 750px;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
